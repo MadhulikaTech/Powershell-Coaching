@@ -7,36 +7,67 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: #fff;
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
         .container {
-            width: 80%;
+            max-width: 800px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            border-radius: 10px;
+            box-sizing: border-box;
+            text-align: center; /* Aligning text to center */
         }
-        h1 {
-            color: #0056b3;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .cta {
-            margin-top: 20px;
-        }
-        .cta a {
-            text-decoration: none;
+        h1, h2 {
             color: #fff;
-            background-color: #0056b3;
+        }
+        ul {
+            padding-left: 20px;
+            text-align: left; /* Aligning list items to left */
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: left; /* Aligning paragraphs to left */
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
             padding: 10px 20px;
-            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin: 0 auto;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
@@ -44,29 +75,35 @@
     <div class="container">
         <h1>Master PowerShell with Expert Guidance</h1>
         <p>Unlock the power of automation and scripting with personalized PowerShell lessons. Perfect for kids and adults!</p>
-        <h2>Services Offered:</h2>
+        <h2>Services Offered</h2>
         <ul>
             <li>Beginner to Advanced PowerShell Lessons</li>
             <li>Customizable sessions for kids and adults</li>
             <li>Hands-on projects and practical exercises</li>
         </ul>
-        <h2>Price:</h2>
-        <p>"Only 50$/hour"</p>
-        <h2>Benefits:</h2>
+        <h2>Benefits</h2>
         <ul>
-            <li>Enhance coding skills</li>
-            <li>Boost productivity with automation</li>
+            <li>Enhance coding skills with real-world projects</li>
+            <li>Boost productivity with time-saving automation techniques</li>
             <li>Learn from a seasoned expert</li>
+            <li>Classes conducted online for your convenience</li> <!-- Moved this from Contact Information to Benefits section -->
         </ul>
-        <div class="contact-info">
-            <h2>Contact Information:</h2>
-            <p>Email: yourname@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Website: www.yourwebsite.com</p>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:madhulika.s.tech@gmail.com">madhulika.s.tech@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/madhulika-s1">Contact me on LinkedIn</a></p> <!-- Added LinkedIn profile link -->
+        <div class="contact-form">
+            <h2>Send me a Message</h2>
+            <form action="mailto:madhulika.s.tech@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Send">
+            </form>
         </div>
-        <div class="cta">
-            <a href="mailto:yourname@example.com">Contact me today to schedule your first lesson!</a>
-        </div>
+        <p>Only 50$ per hour</p> <!-- Moved Price section to the end -->
     </div>
 </body>
 </html>
